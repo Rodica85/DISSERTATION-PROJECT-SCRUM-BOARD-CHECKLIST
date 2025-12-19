@@ -31,3 +31,9 @@ tasks, milestones, and deadlines aligned with the academic timetable.
 ## Notes
 This repository is intended for academic project management purposes.
 No personal participant data is stored in this repository.
+
+## Supervision and Log Book
+Project progress is supported through regular supervision meetings.
+A log book is maintained and updated jointly by the student and supervisor
+to record progress, feedback, and agreed actions throughout the project.
+
