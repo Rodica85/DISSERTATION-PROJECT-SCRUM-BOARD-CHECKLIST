@@ -4,7 +4,7 @@
 **Name:** Rodica Musteata  
 **Programme:** BSc (Hons) Computing (NCG)  
 **Module:** CMP600 – Dissertation  
-**Project Period:** November 2025 – March 2026  
+**Project Period:** November 2025 – May 2026  
 
 ---
 
