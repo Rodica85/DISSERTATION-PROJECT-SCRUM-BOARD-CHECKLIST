@@ -1,0 +1,14 @@
+timestamp,session_id,bot_tone,q1_understanding,q2_care,q3_trust_info,q4_human_like,q5_privacy_confidence,q6_satisfaction,comments
+2026-03-02T15:37:50.251715,,Non-Empathetic,1,3,2,1,1,1,Conversation like with robot
+2026-03-07T20:34:59.478524,,Neutral,1,5,2,4,3,3,Good
+2026-03-10T08:57:37.642134,,Non-Empathetic,2,2,3,2,1,2,
+2026-03-10T09:48:11.703803,,Non-Empathetic,1,1,1,1,1,2,
+2026-03-10T10:18:30.811244,,Neutral,3,3,3,2,2,2,
+2026-03-10T10:50:13.518997,,Empathetic,5,5,3,3,1,5,
+2026-03-10T11:16:16.127901,,Non-Empathetic,1,1,1,1,1,1,
+2026-03-10T11:18:45.738699,,Neutral,1,2,2,4,2,4,
+2026-03-10T11:20:56.161298,,Empathetic,2,3,3,2,2,4,
+2026-03-10T11:21:41.445604,,Empathetic,2,2,2,2,2,3,
+2026-03-10T11:24:19.134290,,Non-Empathetic,1,3,5,3,3,2,
+2026-03-10T11:54:21.468194,,Non-Empathetic,1,3,3,3,2,3,
+2026-03-10T12:26:17.050329,,Empathetic,1,2,3,2,2,2,

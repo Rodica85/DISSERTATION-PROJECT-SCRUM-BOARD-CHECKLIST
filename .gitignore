@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+analysis_output/
+chat_logs/
+questionnaire_responses_backup.csv

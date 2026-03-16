@@ -1,84 +1,72 @@
-# Dissertation Project – Scrum Board & Checklist
+# TravelAssistantAI
 
-## Student Information
-**Name:** Rodica Musteata  
-**Programme:** BSc (Hons) Computing (NCG)  
-**Module:** CMP600 – Dissertation  
-**Project Period:** November 2025 – May 2026  
+BSc Computing Dissertation Project — Rodica Musteata (2026)
 
----
+## About
 
-## Project Overview
-This repository is used to manage and track the progress of my undergraduate
-dissertation project using Scrum and agile project management principles.
+A controlled research experiment that tests how three chatbot communication styles (Empathetic, Neutral, Non-Empathetic) affect user perception, emotional trust, and data privacy concerns during travel planning interactions.
 
-It provides structured planning, task tracking, and progress monitoring across
-all stages of the dissertation lifecycle, aligned with CMP600 requirements.
+## Tech Stack
 
----
+- **Python 3.10+**
+- **Flet** — Desktop UI framework
+- **Ollama** — Local LLM inference (llama3.2:3b)
 
-## Project Scope
-The Scrum board and GitHub issues in this repository cover the following areas:
+## Prerequisites
 
-- Dissertation proposal development and submission (CMP600)
-- Ethics approval documentation
-- Literature review
-- Design and development of a simple chatbot prototype (artefact)
-- Data collection using anonymous questionnaires
-- Data analysis
-- Dissertation writing, reflection, and final submission
+1. Install [Ollama](https://ollama.com)
+2. Pull the required model:
+   ```bash
+   ollama pull llama3.2:3b
+   ```
+3. Make sure Ollama is running:
+   ```bash
+   ollama serve
+   ```
 
----
+## Setup
 
-## Prototype (Artefact)
-As part of this dissertation, a simple, non-clinical chatbot prototype or
-simulated chat interface will be designed and developed.
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+# venv\Scripts\activate   # Windows
 
-The prototype will support short, neutral interactions and will include clear
-on-screen transparency and privacy messages (e.g. research purpose, no personal
-data collection, no message storage). The prototype is intended as a research
-artefact rather than a full production system.
+# Install dependencies
+pip install -r requirements.txt
+```
 
----
+## Run
 
-## Project Management Approach
-The project follows an iterative, Scrum-based approach. Work is organised into
-clearly defined sprints, each represented by milestones with associated tasks and
-deadlines aligned to the academic timetable.
+```bash
+python app.py
+```
 
-GitHub Issues are used to represent individual tasks, while GitHub Projects
-provides a Scrum board with the following columns:
-Backlog, To Do, In Progress, Review, and Done.
+## Experiment Flow
 
----
+1. Participant reads study information and gives informed consent
+2. Randomly assigned one of 3 communication tones
+3. Chatbot asks 10 sequential travel planning questions
+4. Bot provides 3 destination recommendations
+5. Participant completes a 6-question Likert scale questionnaire
+6. Anonymous responses saved to CSV
 
-## Ethics and Data Collection
-Primary data will be collected using an anonymous, questionnaire-based approach.
-No personally identifiable or sensitive participant data will be collected.
+## Data Files
 
-Ethical approval documentation, including participant information and consent
-forms, is completed in accordance with university guidelines and data protection
-requirements. No participant data is stored in this repository.
+- `questionnaire_responses.csv` — Likert scale survey responses
+- `chat_logs/` — Timestamped conversation transcripts (JSON)
 
----
+## Project Structure
 
-## Supervision and Log Book
-Project progress is supported through regular supervision meetings. A minimum of
-six supervision meetings will be held during the project.
-
-A log book is maintained and updated after each meeting to record progress,
-feedback, decisions, and agreed actions, supporting reflective practice and
-project management.
-
----
-
-## Tools Used
-- GitHub Issues
-- GitHub Projects (Scrum Board)
-- Microsoft Word (formal academic documentation)
-
----
-
-## Notes
-This repository is intended solely for academic project management purposes.
-It does not contain dissertation drafts or participant data.
+```
+TravelAssistantAI/
+├── app.py              # Main application
+├── config.py           # Configuration settings
+├── prompts.py          # System prompts for 3 tones
+├── analysis.py         # Statistical analysis script
+├── requirements.txt    # Python dependencies
+├── chat_logs/          # Saved conversation transcripts
+├── questionnaire_responses.csv
+└── tests/
+    └── test_core.py    # Unit tests
+```
