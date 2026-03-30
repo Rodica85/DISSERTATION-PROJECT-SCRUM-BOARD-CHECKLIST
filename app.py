@@ -1,4 +1,8 @@
-"""TravelAssistantAI - Main application for the travel chatbot research experiment."""
+"""TravelAssistantAI - Main application for the travel chatbot research experiment.
+
+Author: Rodica Musteata
+Project: BSc (Hons) Computing Dissertation - NCG (2026)
+"""
 
 import asyncio
 import csv

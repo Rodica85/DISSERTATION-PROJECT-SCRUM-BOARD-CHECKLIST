@@ -1,4 +1,8 @@
-"""Configuration settings for TravelAssistantAI."""
+"""Configuration settings for TravelAssistantAI.
+
+Author: Rodica Musteata
+Project: BSc (Hons) Computing Dissertation - NCG (2026)
+"""
 
 import os
 
